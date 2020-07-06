@@ -43,7 +43,6 @@ glimpse(dat)
 #> $ imdb_rating       <dbl> 8.1, 8.1, 8.1, 8.1, 8.1, 8.1, 8.1, 8.1, 8.1, 8.1,...
 
 dat %>% 
-    mutate(book = as_factor(book)) %>% 
     ggplot(aes(x = chapter_num, y = imdb_rating)) +
     geom_point() +
     facet_wrap(~ book)

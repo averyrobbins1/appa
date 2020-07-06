@@ -41,7 +41,6 @@ dat <- appa::appa
 glimpse(dat)
 
 dat %>% 
-    mutate(book = as_factor(book)) %>% 
     ggplot(aes(x = chapter_num, y = imdb_rating)) +
     geom_point() +
     facet_wrap(~ book)
