@@ -208,6 +208,7 @@ writers_directors2 <- writers_directors %>%
     url = str_remove(url, "https://avatar.fandom.com/wiki/"),
     url = str_replace_all(url, "_", " "),
     url = str_remove(url, " \\(episode\\)"),
+    url = str_replace_all(url, pattern = "%27", replacement = "\'"),
     Written = str_replace(Written, " Additional writing: ", ", ")
   ) %>%
   rename(chapter = url, writer = Written, director = Directed)
