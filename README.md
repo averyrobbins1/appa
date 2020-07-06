@@ -3,10 +3,10 @@
 
 # appa
 
-![appa](img/appa-hex.png)
-
 The goal of appa is to provide an easy way to share Avatar: The Last
 Airbender transcript data.
+
+![appa](img/appa-hex.png)
 
 ## Installation
 
