@@ -3,9 +3,7 @@
 
 # appa
 
-<!-- badges: start -->
-
-<!-- badges: end -->
+![](img/appa-hex.png)
 
 The goal of appa is to provide an easy way to share Avatar: The Last
 Airbender transcript data.
