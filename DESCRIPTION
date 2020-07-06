@@ -1,0 +1,16 @@
+Package: appa
+Title: A Package To Share Avatar: The Last Airbender Data
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Avery",
+           family = "Robbins",
+           role = c("aut", "cre"),
+           email = "averyrobbins17@gmail.com")
+Description: A dataset containing the transcripts, writers, directors, and
+    imdb ratings of the greatest animated tv show of all time - Avatar:
+    The Last Airbender.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Depends: R (>= 2.10)
