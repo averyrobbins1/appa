@@ -4,7 +4,8 @@
 # appa
 
 The goal of appa is to provide an easy way to share Avatar: The Last
-Airbender transcript data.
+Airbender transcript data. Have fun analyzing data from perhaps the
+greatest animated tv show of all time!
 
 ![appa](img/appa-hex.png)
 
