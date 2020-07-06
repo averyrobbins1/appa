@@ -7,17 +7,17 @@
 \format{
 A data frame with 13,385 rows and 12 variables:
 \describe{
-  \item{id}{<int> an id number for each row, essentially just a row number}
-  \item{book}{<chr> the name of each book, or season, in the series: Water,
+  \item{id}{an id number for each row, essentially just a row number}
+  \item{book}{the name of each book, or season, in the series: Water,
   Earth, and Fire}
-  \item{book_num}{<int> an id number for each book, 1-3}
-  \item{chapter}{<chr> the name of each chapter, or episode, in the series}
-  \item{chapter_num}{<int> an id number for each chapter}
-  \item{character}{<chr> every character who ever spoke in the series}
-  \item{full_text}{<chr> the words spoken by each character and some
+  \item{book_num}{an id number for each book, 1-3}
+  \item{chapter}{the name of each chapter, or episode, in the series}
+  \item{chapter_num}{an id number for each chapter}
+  \item{character}{every character who ever spoke in the series}
+  \item{full_text}{the words spoken by each character and some
   additional scene descriptions}
-  \item{character_words}{<chr> the words spoken by each character}
-  \item{scene_description}{<chr> the descriptions of what is happening on
+  \item{character_words}{the words spoken by each character}
+  \item{scene_description}{the descriptions of what is happening on
   screen, often as the characters are talking}
   \item{writer}{the writer, or writers, for each episode}
   \item{director}{the director for each episode}
@@ -27,6 +27,7 @@ A data frame with 13,385 rows and 12 variables:
 }
 \source{
 \url{https://avatar.fandom.com/wiki/Avatar:_The_Last_Airbender}
+
  \url{https://www.imdb.com/list/ls079841896/}
 }
 \usage{

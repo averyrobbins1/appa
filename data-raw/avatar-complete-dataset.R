@@ -245,7 +245,9 @@ imdb <- bind_cols(imdb_chapters, imdb_ratings) %>%
   right_join(chapters) %>%
   select(chapter, imdb_rating = rating)
 
-dat3 <- dat2 %>% left_join(imdb, by = "chapter")
+dat3 <- dat2 %>% left_join(imdb, by = "chapter") %>%
+  mutate(book = as_factor(book),
+         chapter = as_factor(chapter))
 
 appa <- dat3
 
