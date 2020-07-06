@@ -18,37 +18,34 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of appa is to ...
+The goal of appa is to provide an easy way to share Avatar: The Last Airbender
+transcript data.
 
 ## Installation
 
-You can install the released version of appa from [CRAN](https://CRAN.R-project.org) with:
+You can install appa from [GitHub](https://github.com/) with:
 
 ``` r
-install.packages("appa")
+# install.packages("devtools")
+devtools::install_github("averyrobbins1/appa")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example:
 
-```{r example}
-library(appa)
-## basic example code
+```{r, message = FALSE}
+library(tidyverse)
+
+dat <- appa::appa
+
+glimpse(dat)
+
+dat %>% 
+    mutate(book = as_factor(book)) %>% 
+    ggplot(aes(x = chapter_num, y = imdb_rating)) +
+    geom_point() +
+    facet_wrap(~ book)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
 
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
